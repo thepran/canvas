@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+
+  <body>
+    <div class="theme">
+      <span class="material-symbols-outlined"> light_mode </span>
+      <label class="theme-selector">
+        <input type="checkbox" id="theme" />
+        <span class="slider" round></span>
+      </label>
+      <span class="material-symbols-outlined"> dark_mode </span>
+    </div>
+    <header>
+      <h1>Skethyyy</h1>
+      <h2>Fill your Paint.....</h2>
+    </header>
+    <main>
+      <aside class="options">
+        <div class="color-selector option-card">
+          <label for="color__picker" id="color-pick-card">
+            <input type="color" id="color__picker" />
+            Pen Color
+          </label>
+          <button class="btn" id="random">Random Color</button>
+        </div>
+        <div class="range-selector option-card">
+          <input type="range" id="size" />
+          <label for="size">Grid size: <span id="grid-size"></span></label>
+        </div>
+        <button class="btn" id="grid-toggle">Hide Grid</button>
+        <button class="btn" id="clear">Clear</button>
+      </aside>
+      <div class="canvas">
+        <div class="grid-box-container"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <a href="https://twitter.com/pranydotin" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://github.com/thepran" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a href="https://codepen.io/thepran" target="_blank">
+        <i class="fa-brands fa-codepen"></i>
+      </a>
+    </footer>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7a31ca3e04.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
